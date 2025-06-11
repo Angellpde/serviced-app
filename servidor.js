@@ -1,9 +1,9 @@
 const express = require('express');
 const cors = require('cors');
-const registrousuario = require('./vista/UsuarioRutas');
-const loginusuario = require('./vista/LoginRuta');
+const registrousuario = require('./vista/profesional/UsuarioRutas');
+const loginusuario = require('./vista/profesional/LoginRuta');
 const path = require('path');
-const loginControlador = require('./controlador/LoginControlador');
+const loginControlador = require('./controlador/profesional/LoginControlador');
 const UsuarioModelo = require('./modelo/UsuarioModelo');
 const app = express();
 const PORT = process.env.PORT || 4545;
